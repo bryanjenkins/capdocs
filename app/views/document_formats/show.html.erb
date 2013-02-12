@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @document_format.name %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @document_format.symbol %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_format_path(@document_format) %> |
+<%= link_to 'Back', document_formats_path %>

@@ -1,0 +1,26 @@
+<h1>Listing Business Areas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Symbol</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @business_areas.each do |business_area| %>
+  <tr>
+    <td><%= business_area.name %></td>
+    <td><%= business_area.symbol %></td>
+    <td><%= link_to 'Show', business_area %></td>
+    <td><%= link_to 'Edit', edit_business_area_path(business_area) %></td>
+    <td><%= link_to 'Destroy', business_area, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Business area', new_business_area_path %> |
+<%= link_to 'Back', root_path %>

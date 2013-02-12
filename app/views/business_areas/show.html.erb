@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @business_area.name %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @business_area.symbol %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_area_path(@business_area) %> |
+<%= link_to 'Back', business_areas_path %>

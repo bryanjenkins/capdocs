@@ -1,0 +1,43 @@
+<h1> CapDocs </h1>
+<div class="column">
+  <h1> Type Of Document </h1>
+  <ul>
+    <% @document_types.each do |dt| %>
+      <li>
+        <div class="name"><%= dt.name %></div>
+        <div class="symbol"><%= dt.symbol %></div>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to "Add", new_document_type_path %> |
+  <%= link_to "Edit", document_types_path %>
+</div>
+
+<div class="column">
+  <h1> Area of Business </h1>
+  <ul>
+    <% @business_areas.each do |b| %>
+      <li>
+        <div class="name"><%= b.name %></div>
+        <div class="symbol"><%= b.symbol %></div>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to "Add", new_business_area_path %> |
+  <%= link_to "Edit", business_areas_path %>
+</div>
+
+<div class="column">
+  <h1> Document Format  </h1>
+  <ul>
+    <% @document_formats.each do |df| %>
+      <li>
+        <div class="name"><%= df.name %></div>
+        <div class="symbol"><%= df.symbol %></div>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to "Add", new_document_format_path %> |
+  <%= link_to "Edit", document_formats_path %>
+</div>
+
