@@ -123,3 +123,16 @@ th {
   font-weight: 600;
   width: 25%;
 }
+
+@media only screen and (max-width: 950px) {
+
+  .column { 
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  
+}
